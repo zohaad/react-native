@@ -135,7 +135,7 @@ export default class Touchables extends Component {
         </TouchableOpacity>
         <TouchableNativeFeedback
             onPress={this._onPressButton}
-            background={Platform.OS === 'android' ? TouchableNativeFeedback.SelectableBackground() : ''}>
+            background={Platform.OS === 'android' ? TouchableNativeFeedback.SelectableBackground() : ''}>{/* this doesn't work, it still shows the red box */}
           <View style={styles.button}>
             <Text style={styles.buttonText}>TouchableNativeFeedback</Text>
           </View>
